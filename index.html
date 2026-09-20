@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CITY RUN 2027 — Городской забег в Краснодаре</title>
+</head>
+<body>
+
+  <!-- ===== ШАПКА ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">CITY RUN <span>2027</span></a>
+      <nav class="nav">
+        <a href="#about">О забеге</a>
+        <a href="#distances">Дистанции</a>
+        <a href="#program">Программа</a>
+        <a href="#gallery">Галерея</a>
+      </nav>
+      <a href="#register" class="btn btn--accent">Зарегистрироваться</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <p class="hero__label">15 марта 2027 · Краснодар</p>
+      <h1 class="hero__title">Городской забег<br>CITY RUN 2027</h1>
+      <p class="hero__subtitle">Выбери свою дистанцию — 5, 10 или 21 км. Старт в 9:00, финиш с медалью.</p>
+
+      <!-- ТАЙМЕР -->
+      <div class="timer" id="timer">
+        <div class="timer__item">
+          <span class="timer__num" id="days">00</span>
+          <span class="timer__label">дней</span>
+        </div>
+        <div class="timer__item">
+          <span class="timer__num" id="hours">00</span>
+          <span class="timer__label">часов</span>
+        </div>
+        <div class="timer__item">
+          <span class="timer__num" id="minutes">00</span>
+          <span class="timer__label">минут</span>
+        </div>
+        <div class="timer__item">
+          <span class="timer__num" id="seconds">00</span>
+          <span class="timer__label">секунд</span>
+        </div>
+      </div>
+
+      <a href="#register" class="btn btn--accent btn--big">Участвовать</a>
+    </div>
+  </section>
+
+  <!-- ===== О ЗАБЕГЕ ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">О забеге</h2>
+      <div class="about__grid">
+        <div class="about__card">
+          <div class="about__icon">📅</div>
+          <h3>15 марта 2027</h3>
+          <p>Старт в 9:00 утра. Собираемся на главной площади города.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">🏃</div>
+          <h3>3 дистанции</h3>
+          <p>5 км для новичков, 10 км для любителей и 21 км для профи.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">🏅</div>
+          <h3>Медаль финишёра</h3>
+          <p>Каждый, кто дойдёт до финиша, получит памятную медаль и воду.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">📍</div>
+          <h3>Краснодар</h3>
+          <p>Маршрут проходит по центру города — красивые виды и ровная трасса.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ДИСТАНЦИИ ===== -->
+  <section class="distances" id="distances">
+    <div class="container">
+      <h2 class="section-title">Выбери дистанцию</h2>
+      <div class="distances__grid">
+
+        <div class="dist-card">
+          <h3 class="dist-card__title">5 км</h3>
+          <p class="dist-card__tag">Для новичков</p>
+          <p class="dist-card__price">1 200 ₽</p>
+          <ul class="dist-card__list">
+            <li>Стартовый номер</li>
+            <li>Медаль финишёра</li>
+            <li>Вода на трассе</li>
+            <li>Фото с забега</li>
+          </ul>
+          <a href="#register" class="btn btn--outline">Выбрать</a>
+        </div>
+
+        <div class="dist-card dist-card--popular">
+          <p class="dist-card__badge">Популярный</p>
+          <h3 class="dist-card__title">10 км</h3>
+          <p class="dist-card__tag">Для любителей</p>
+          <p class="dist-card__price">1 800 ₽</p>
+          <ul class="dist-card__list">
+            <li>Стартовый номер</li>
+            <li>Медаль финишёра</li>
+            <li>Питание на трассе</li>
+            <li>Фото с забега</li>
+            <li>Футболка участника</li>
+          </ul>
+          <a href="#register" class="btn btn--accent">Выбрать</a>
+        </div>
+
+        <div class="dist-card">
+          <h3 class="dist-card__title">21 км</h3>
+          <p class="dist-card__tag">Полумарафон</p>
+          <p class="dist-card__price">2 500 ₽</p>
+          <ul class="dist-card__list">
+            <li>Стартовый номер</li>
+            <li>Медаль финишёра</li>
+            <li>Полноценное питание</li>
+            <li>Фото с забега</li>
+            <li>Футболка участника</li>
+            <li>Чип для хронометража</li>
+          </ul>
+          <a href="#register" class="btn btn--outline">Выбрать</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПРОГРАММА ДНЯ ===== -->
+  <section class="program" id="program">
+    <div class="container">
+      <h2 class="section-title">Программа дня</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <span class="timeline__time">08:00</span>
+          <p class="timeline__text">Регистрация участников и выдача номеров</p>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__time">08:30</span>
+          <p class="timeline__text">Общая разминка с тренером</p>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__time">09:00</span>
+          <p class="timeline__text">Старт на дистанцию 21 км</p>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__time">09:15</span>
+          <p class="timeline__text">Старт на дистанцию 10 км</p>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__time">09:30</span>
+          <p class="timeline__text">Старт на дистанцию 5 км</p>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__time">12:00</span>
+          <p class="timeline__text">Награждение победителей и закрытие забега</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ГАЛЕРЕЯ ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Как это было</h2>
+      <div class="gallery__grid">
+        <img src="img/run1.jpg" alt="Забег 1">
+        <img src="img/run2.jpg" alt="Забег 2">
+        <img src="img/run3.jpg" alt="Забег 3">
+        <img src="img/run4.jpg" alt="Забег 4">
+        <img src="img/run5.jpg" alt="Забег 5">
+        <img src="img/run6.jpg" alt="Забег 6">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== РЕГИСТРАЦИЯ ===== -->
+  <section class="register" id="register">
+    <div class="container register__inner">
+      <div class="register__text">
+        <h2 class="section-title">Регистрация на забег</h2>
+        <p>Оставь заявку — мы пришлём подтверждение и всю информацию на почту.</p>
+      </div>
+
+      <form class="register__form" action="https://formspree.io/f/ВАШ_ID" method="POST">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+
+        <select name="distance" required>
+          <option value="">Выберите дистанцию</option>
+          <option value="5">5 км</option>
+          <option value="10">10 км</option>
+          <option value="21">21 км</option>
+        </select>
+
+        <button type="submit" class="btn btn--accent btn--big">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">CITY RUN 2027</p>
+      <p class="footer__copy">© 2027 Городской забег в Краснодаре. Все права защищены.</p>
+      <div class="footer__socials">
+        <a href="#">VK</a>
+        <a href="#">Telegram</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== СКРИПТ ТАЙМЕРА ===== -->
+  <script>
+    const raceDate = new Date("2027-03-15T09:00:00").getTime();
+
+    const timer = setInterval(function () {
+      const now = new Date().getTime();
+      const diff = raceDate - now;
+
+      if (diff <= 0) {
+        clearInterval(timer);
+        document.getElementById("timer").innerHTML = "<p>Забег стартовал!</p>";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = String(days).padStart(2, "0");
+      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+      document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+    }, 1000);
+  </script>
+
+</body>
+</html>
